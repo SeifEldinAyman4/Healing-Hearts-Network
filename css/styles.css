@@ -167,6 +167,21 @@ main {
     max-width: 300px;
 }
 
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.card-container .card:nth-child(2) h3, 
+.card-container .card:nth-child(3) h3 {
+    text-align: center; /* Ensure title text is centered */
+}
+
+.card-container .card:nth-child(2) p, 
+.card-container .card:nth-child(3) p {
+    text-align: center; /* Ensure paragraph text is centered */
+}
+
 .section-graph-container {
     height: fit-content;
     display: flex;
@@ -212,4 +227,32 @@ main {
 .section-img img {
     width: 100%;
     height: auto;
+}
+
+
+/* Overwriting btn styling */
+
+.hero-btns button {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: var(--text);
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 18px 48px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-btns button:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btns button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

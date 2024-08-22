@@ -15,7 +15,7 @@
             </div>
 
             <div class="nav-right">
-                <a href="./discover.html">Problems</a>
+                <a href="./pages/problems.html">Problems</a>
                 <a href="./pages/solutions.html">Solutions</a>
                 <a href="./Survey.html">Survey</a>
             </div>
@@ -32,8 +32,8 @@
                     mental health issues.
                 </p>
                 <div class="hero-btns">
-                    <button id="problem-btn">Problems</button>
-                    <button id="solutions-btn">Solutions</button>
+                    <button id="problem-btn" onclick="redirectToPage('problems.html')">Problems</button>
+                    <button id="solutions-btn" onclick="redirectToPage('solutions.html')">Solutions</button>
                 </div>
             </div>
             <div class="hero-right">
@@ -112,5 +112,11 @@
             </div>
         </section>
     </main>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = `./pages/${page}`;
+        }
+    </script>
 </body>
 </html>

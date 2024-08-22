@@ -10,6 +10,14 @@
     --primary: #db8c8c;
     --secondary: #333fac;
     --accent: #ffc10b;
+    --card-bg: rgba(255, 193, 11, 0.1);
+    --border-radius: 20px;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Roboto", sans-serif;
+    color: var(--text);
 }
 
 header {
@@ -20,7 +28,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 25px 12vw;
 }
 
@@ -28,13 +35,16 @@ header {
     font-family: "Outfit", sans-serif;
     font-size: 24px;
     font-weight: 700;
+    color: var(--text);
+}
 
+.nav-left a {
+    text-decoration: none;
     color: var(--text);
 }
 
 .nav-right {
     display: flex;
-
     gap: 32px;
 }
 
@@ -44,4 +54,68 @@ header {
     font-size: 18px;
     font-family: "Outfit", sans-serif;
     font-weight: bold;
+}
+
+main {
+    padding: 50px 12vw;
+}
+
+h1, h2 {
+    font-family: "Outfit", sans-serif;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 24px 0;
+}
+
+p, ul {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+
+/* Suggested Enhancements */
+section {
+    padding: 40px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul li strong {
+    color: var(--primary);
+}
+
+section:nth-of-type(odd) {
+    background-color: rgba(51, 63, 172, 0.1);
+}
+
+section:nth-of-type(even) {
+    background-color: rgba(219, 140, 140, 0.1);
 }

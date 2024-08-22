@@ -32,6 +32,11 @@ header {
     color: var(--text);
 }
 
+.nav-left a {
+    text-decoration: none;
+    color: var(--text);
+}
+
 .nav-right {
     display: flex;
 
